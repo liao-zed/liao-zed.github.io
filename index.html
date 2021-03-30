@@ -157,27 +157,17 @@
     <article id="post-搭建博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/30/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
-    </h1>
-  
-
-        
-        <a href="/2021/03/30/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-03-30T00:40:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-30</time>
-</a>
-        
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="闲聊"><a href="#闲聊" class="headerlink" title="闲聊"></a>闲聊</h1><p>&#160;&#160;&#160;&#160;在偶然间想自己弄一个属于自己的博客来玩玩，然后就马上开始着手完成自己的想法了。如果你也想拥有一个属于自己的博客，那么请你跟着我的做法，搭建一个属于自己的博客吧。<br>&#160;&#160;博客搭建大概分为4个步骤<br>&#160;&#160;&#160;&#160;1.搭建环境准备（包括node.js和git环境、github账户的设置）<br>&#160;&#160;&#160;&#160;2.安装Hexo<br>&#160;&#160;&#160;&#160;3.配置Hexo<br>&#160;&#160;&#160;&#160;4.Hexo连接到自己的Github服务器</p>
+        <hr>
+<p>title: 搭建博客<br>date: 2021-03-30 08:40:31<br>tags: 随笔</p>
+<hr>
+<h1 id="闲聊"><a href="#闲聊" class="headerlink" title="闲聊"></a>闲聊</h1><p>&#160;&#160;&#160;&#160;在偶然间想自己弄一个属于自己的博客来玩玩，然后就马上开始着手完成自己的想法了。如果你也想拥有一个属于自己的博客，那么请你跟着我的做法，搭建一个属于自己的博客吧。<br>&#160;&#160;博客搭建大概分为4个步骤<br>&#160;&#160;&#160;&#160;1.搭建环境准备（包括node.js和git环境、github账户的设置）<br>&#160;&#160;&#160;&#160;2.安装Hexo<br>&#160;&#160;&#160;&#160;3.配置Hexo<br>&#160;&#160;&#160;&#160;4.Hexo连接到自己的Github服务器</p>
 <h2 id="搭建环境的准备"><a href="#搭建环境的准备" class="headerlink" title="搭建环境的准备"></a>搭建环境的准备</h2><p>&#160;&#160;&#160;&#160;分为以下三步<br>&#160;&#160;&#160;&#160;&#160;&#160;Noje.js的安装和准备<br>&#160;&#160;&#160;&#160;&#160;&#160;git的安装和准备<br>&#160;&#160;&#160;&#160;&#160;&#160;github账户的配置</p>
 <h3 id="Noje-js环境配置"><a href="#Noje-js环境配置" class="headerlink" title="Noje.js环境配置"></a>Noje.js环境配置</h3><p>&#160;&#160;&#160;&#160;1.下载Noje.js文件<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我在这里提供了Noje.js的Windonws 64位系统的安装途径<br>&#160;&#160;&#160;&#160;<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi">Windows Installer 64-bit</a><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在下载完成后打开安装包<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/1.jpg"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;一路Next就完成安装了（建议文件的安装自己放到自己熟悉的系统磁盘内）<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在全部安装完毕后，我们进行验证Noje是否安装成功，在键盘上按下Win+R组合出现运行界面<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/2.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;输入cmd回车，调出命令行<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;输入以下命令，如果出现版本号，则说明Noje安装成功</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1|     node -v</span><br><span class="line">2|     npm -v</span><br></pre></td></tr></table></figure>
+<pre><code>    1|     node -v
+    2|     npm -v
+</code></pre>
 <p>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/3.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;让我们继续安装所需要的环境</p>
         
           <a class="article-more-a" href="/2021/03/30/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more">more >></a>
@@ -189,17 +179,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -405,10 +384,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">摘抄</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
