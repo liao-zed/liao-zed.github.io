@@ -6,15 +6,45 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | 春</title>
+  <title>搭建博客 | 春</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="春">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="闲聊&amp;#160;&amp;#160;&amp;#160;&amp;#160;在偶然间想自己弄一个属于自己的博客来玩玩，然后就马上开始着手完成自己的想法了。如果你也想拥有一个属于自己的博客，那么请你跟着我的做法，搭建一个属于自己的博客吧。&amp;#160;&amp;#160;博客搭建大概分为4个步骤&amp;#160;&amp;#160;&amp;#160;&amp;#160;1.搭建环境准备（包括node.js和git环境、github账户的设置）&amp;#160;&amp;#1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建博客">
+<meta property="og:url" content="http://example.com/2021/03/30/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="春">
+<meta property="og:description" content="闲聊&amp;#160;&amp;#160;&amp;#160;&amp;#160;在偶然间想自己弄一个属于自己的博客来玩玩，然后就马上开始着手完成自己的想法了。如果你也想拥有一个属于自己的博客，那么请你跟着我的做法，搭建一个属于自己的博客吧。&amp;#160;&amp;#160;博客搭建大概分为4个步骤&amp;#160;&amp;#160;&amp;#160;&amp;#160;1.搭建环境准备（包括node.js和git环境、github账户的设置）&amp;#160;&amp;#1">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/1.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/2.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/3.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/4.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/5.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/6.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/7.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/8.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/9.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/10.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/11.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/12.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/13.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/14.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/15.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/16.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/17.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/23.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/18.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/19.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/20.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/21.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/22.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/24.png">
+<meta property="article:published_time" content="2021-03-30T00:40:31.000Z">
+<meta property="article:modified_time" content="2021-03-30T00:41:12.219Z">
 <meta property="article:author" content="J">
+<meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="春" type="application/atom+xml">
   
@@ -152,36 +182,95 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-搭建博客" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/30/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-03-30T00:40:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-30</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/30/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">搭建博客</a>
+    <h1 class="article-title" itemprop="name">
+      搭建博客
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/03/30/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2021-03-30T00:40:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="闲聊"><a href="#闲聊" class="headerlink" title="闲聊"></a>闲聊</h1><p>&#160;&#160;&#160;&#160;在偶然间想自己弄一个属于自己的博客来玩玩，然后就马上开始着手完成自己的想法了。如果你也想拥有一个属于自己的博客，那么请你跟着我的做法，搭建一个属于自己的博客吧。<br>&#160;&#160;博客搭建大概分为4个步骤<br>&#160;&#160;&#160;&#160;1.搭建环境准备（包括node.js和git环境、github账户的设置）<br>&#160;&#160;&#160;&#160;2.安装Hexo<br>&#160;&#160;&#160;&#160;3.配置Hexo<br>&#160;&#160;&#160;&#160;4.Hexo连接到自己的Github服务器</p>
+<h2 id="搭建环境的准备"><a href="#搭建环境的准备" class="headerlink" title="搭建环境的准备"></a>搭建环境的准备</h2><p>&#160;&#160;&#160;&#160;分为以下三步<br>&#160;&#160;&#160;&#160;&#160;&#160;Noje.js的安装和准备<br>&#160;&#160;&#160;&#160;&#160;&#160;git的安装和准备<br>&#160;&#160;&#160;&#160;&#160;&#160;github账户的配置</p>
+<h3 id="Noje-js环境配置"><a href="#Noje-js环境配置" class="headerlink" title="Noje.js环境配置"></a>Noje.js环境配置</h3><p>&#160;&#160;&#160;&#160;1.下载Noje.js文件<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我在这里提供了Noje.js的Windonws 64位系统的安装途径<br>&#160;&#160;&#160;&#160;<a target="_blank" rel="noopener" href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi">Windows Installer 64-bit</a><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在下载完成后打开安装包<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/1.jpg"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;一路Next就完成安装了（建议文件的安装自己放到自己熟悉的系统磁盘内）<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在全部安装完毕后，我们进行验证Noje是否安装成功，在键盘上按下Win+R组合出现运行界面<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/2.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;输入cmd回车，调出命令行<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;输入以下命令，如果出现版本号，则说明Noje安装成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1|     node -v</span><br><span class="line">2|     npm -v</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/3.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;让我们继续安装所需要的环境</p>
+<span id="more"></span>
+<h3 id="Git环境配置"><a href="#Git环境配置" class="headerlink" title="Git环境配置"></a>Git环境配置</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;下载Git的安装文件<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">Git官方下载路径</a><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;进入后进行下载<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/4.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;进入安装界面<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/5.jpg"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;和Noje.js的安装一样，大部分设置只需要保持默认，处于操作方便的考虑，建议PATH选项按照下图选择：<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Git PATH设置<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/6.jpg"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;安装完成后检查是否安装成功<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;打开命令行输入以下指令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1|     git --version</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;出现以下信息说明安装成功<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/7.jpg"></p>
+<h3 id="Github账户的注册和配置"><a href="#Github账户的注册和配置" class="headerlink" title="Github账户的注册和配置"></a>Github账户的注册和配置</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;如果你已经有Github账户可以跳过此步骤</p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;首先是Github账户的注册<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a target="_blank" rel="noopener" href="https://github.com/">Github官方路径</a><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在下图框中，分别输入自己的用户名、邮箱、密码即可密码即可<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/8.jpg"></p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;注册完成后，进行登陆创建自己的代码库<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;点击页面右上角的加号，选择New repository 如下图<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/9.jpg"></p>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;进入代码库的创建页面<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在 Repository name 下面填写 你的名字.github.io  这里一定要加上后缀否则无法上传博客，在Descripion(optional)下填写简单的描述，这里不写也行如图操作即可<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/10.png"></p>
+<h6 id="如果你想要取的名字是jun，那你就填-jun-github-io"><a href="#如果你想要取的名字是jun，那你就填-jun-github-io" class="headerlink" title="如果你想要取的名字是jun，那你就填 jun.github.io"></a>如果你想要取的名字是jun，那你就填 jun.github.io</h6><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;代码库的设置<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;正确创建之后，你将会看到如下界面：<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/11.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;到这里你的Github的环境也就搭建好了</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在自己认为合适的地方创建一个文件夹，我这里是用D:/blog 为例子讲解<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;使用管理员身份打开刚下载的Git Bash软件 （正常情况下在左下角打开就能找到）<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/12.png"><br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/13.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;然后进入你将要存放博客的文件夹<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;这里cd表示进入 后缀d: 表示D盘 没有冒号表示某个文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1|     cd d:</span><br><span class="line">2|     cd blog</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;正确操作后将会如图显示<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/14.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;然后输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1|     npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;继续输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1|     npm install hexo --save</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;然后你会看到运行窗口出现一大堆白字，现在让我们验证以下Hexo是不是已经安装号了，在窗口继续输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1|     hexo -v</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;如果出现以下文字，说明已经安装成功了<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/15.png"></p>
+<h3 id="Hexo的相关配置"><a href="#Hexo的相关配置" class="headerlink" title="Hexo的相关配置"></a>Hexo的相关配置</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我们先初始化Hexo<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;依次输入以下代码（中间间隔较长，请耐心等待）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1|     hexo init</span><br><span class="line">2|     npm install</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;第二行npm install是让npm自动安装你需要的所有组件，我们只需要耐心等待就行</p>
+<h3 id="首次体验Hexo博客"><a href="#首次体验Hexo博客" class="headerlink" title="首次体验Hexo博客"></a>首次体验Hexo博客</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我们继续在窗口输入以下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1|     hexo g</span><br><span class="line">2|     hexo s</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;然后窗口会出现提示：<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;这里大致意思就是，已经在本电脑上创建出了你自己的博客，如果需要停止请按 Ctrl+C<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/16.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;然后到这里我们就去网站看看自己的博客吧<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在网址输入的地方输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1|     http:&#x2F;&#x2F;localhost:4000</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;这样你就能看见自己的博客啦<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/17.jpg"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;到这里你本地的博客就已经建好了，但是这个是不能分享出去给别人看到，我们没有服务器，所以接下来我们的任务是将Hexo连接到自己的Github服务器上</p>
+<h2 id="Hexo连接到自己的Github服务器"><a href="#Hexo连接到自己的Github服务器" class="headerlink" title="Hexo连接到自己的Github服务器"></a>Hexo连接到自己的Github服务器</h2><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;让我们继续在操作窗口依次输入以下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1|     git config --global user.name &quot;jun&quot;</span><br><span class="line">2|     git config --global user.email &quot;1347730655@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;代码的意思是让第一次使用Git的用户设置自己的名字和网站<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;然后我们需要生成属于我们自己的密钥<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我们在窗口输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1|     ssh-keygen -t rsa -C &quot;1347730655@qq.com&quot;</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;按3个回车，密码为空，等待Git生成属于我们自己的密钥<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;出现以下图案说明密钥生成成功<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/23.jpg"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我们在如下文件夹中找到我们的密钥<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/18.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;用文本文档格式打开第二个文件，里面就是我们自己的密钥了，全部复制就行<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我们打开Github自己创建的代码库<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在设置里面找到密钥，创建自己的密钥<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/19.png"><br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/20.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我们在中间粘贴上Git为自己生成的密钥<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;下面的框一定要勾选上，不然不能上传我们的博客<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/21.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;找到我们Github的主页复制属于我们自己的链接方式<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/22.png"></p>
+<h3 id="配置Deployment"><a href="#配置Deployment" class="headerlink" title="配置Deployment"></a>配置Deployment</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;同样在_config.yml文件中用文本文档打开，拉到最后部分，找到Deployment，然后按照如下修改：<br>&#160;&#160;&#160;&#160;<img src="/images/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/24.png"><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;我的连接是<a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#99;&#x6f;&#109;</a>:liao-zed/jun.github.io.git，因此在中间填入<a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;</a>:liao-zed/jun.github.io.git  其他的全部都不用修改</p>
+<p>&#160;&#160;&#160;&#160;然后我们就可以在窗口输入以下代码将我们的博客部署到Github网站上，让说有人都能访问到了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1|     hexo g</span><br><span class="line">2|     hexo d</span><br></pre></td></tr></table></figure>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;部署成功后访问 你的地址是，<a href="https://yourName.github.io（这里输入我的地址：">https://yourName.github.io（这里输入我的地址：</a> <a target="_blank" rel="noopener" href="https://liao-zed.github.io/">https://liao-zed.github.io </a>),将可以看到生成的博客啦</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -193,57 +282,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/03/30/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/03/28/%E9%A3%9E%E9%B8%9F%E9%9B%86/" class="archive-article-date">
-  	<time datetime="2021-03-28T02:09:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-28</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/03/28/%E9%A3%9E%E9%B8%9F%E9%9B%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">飞鸟集</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/03/28/%E9%A3%9E%E9%B8%9F%E9%9B%86/">飞鸟集</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">摘抄</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -266,8 +404,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
